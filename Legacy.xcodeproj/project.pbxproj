@@ -25,6 +25,9 @@
 		9E9C2E851604B93D00201B1F /* LegacyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2E841604B93D00201B1F /* LegacyTests.m */; };
 		9E9C2E9E1604BAD400201B1F /* NewsDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2E9D1604BAD400201B1F /* NewsDetails.m */; };
 		9E9C2EA11604BAE700201B1F /* NewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EA01604BAE700201B1F /* NewsInfo.m */; };
+		9E9C2EA61604BB7400201B1F /* NewsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EA31604BB7400201B1F /* NewsDelegate.m */; };
+		9E9C2EA71604BB7400201B1F /* NewsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EA51604BB7400201B1F /* NewsStore.m */; };
+		9E9C2EA91604BBB600201B1F /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2EA81604BBB600201B1F /* Legacy_Iron_Ore.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,11 @@
 		9E9C2E9D1604BAD400201B1F /* NewsDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetails.m; sourceTree = "<group>"; };
 		9E9C2E9F1604BAE700201B1F /* NewsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfo.h; sourceTree = "<group>"; };
 		9E9C2EA01604BAE700201B1F /* NewsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfo.m; sourceTree = "<group>"; };
+		9E9C2EA21604BB7400201B1F /* NewsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDelegate.h; sourceTree = "<group>"; };
+		9E9C2EA31604BB7400201B1F /* NewsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDelegate.m; sourceTree = "<group>"; };
+		9E9C2EA41604BB7400201B1F /* NewsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsStore.h; sourceTree = "<group>"; };
+		9E9C2EA51604BB7400201B1F /* NewsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsStore.m; sourceTree = "<group>"; };
+		9E9C2EA81604BBB600201B1F /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +208,7 @@
 		9E9C2E971604BA2700201B1F /* NewsEntities */ = {
 			isa = PBXGroup;
 			children = (
+				9E9C2EA81604BBB600201B1F /* Legacy_Iron_Ore.sqlite */,
 				9E9C2E981604BA3A00201B1F /* NewsNSXMLParser */,
 				9E9C2E9C1604BAD400201B1F /* NewsDetails.h */,
 				9E9C2E9D1604BAD400201B1F /* NewsDetails.m */,
@@ -212,6 +221,10 @@
 		9E9C2E981604BA3A00201B1F /* NewsNSXMLParser */ = {
 			isa = PBXGroup;
 			children = (
+				9E9C2EA21604BB7400201B1F /* NewsDelegate.h */,
+				9E9C2EA31604BB7400201B1F /* NewsDelegate.m */,
+				9E9C2EA41604BB7400201B1F /* NewsStore.h */,
+				9E9C2EA51604BB7400201B1F /* NewsStore.m */,
 			);
 			name = NewsNSXMLParser;
 			sourceTree = "<group>";
@@ -290,6 +303,7 @@
 				9E9C2E5A1604B93C00201B1F /* InfoPlist.strings in Resources */,
 				9E9C2E631604B93C00201B1F /* MainStoryboard_iPhone.storyboard in Resources */,
 				9E9C2E661604B93C00201B1F /* MainStoryboard_iPad.storyboard in Resources */,
+				9E9C2EA91604BBB600201B1F /* Legacy_Iron_Ore.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +343,8 @@
 				9E9C2E691604B93D00201B1F /* Legacy.xcdatamodeld in Sources */,
 				9E9C2E9E1604BAD400201B1F /* NewsDetails.m in Sources */,
 				9E9C2EA11604BAE700201B1F /* NewsInfo.m in Sources */,
+				9E9C2EA61604BB7400201B1F /* NewsDelegate.m in Sources */,
+				9E9C2EA71604BB7400201B1F /* NewsStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
