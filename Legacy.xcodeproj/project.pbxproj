@@ -37,6 +37,10 @@
 		9E9C2EC31604BC9900201B1F /* MyHoldingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EBB1604BC9900201B1F /* MyHoldingsViewController.m */; };
 		9E9C2EC41604BC9900201B1F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EBD1604BC9900201B1F /* NewsViewController.m */; };
 		9E9C2EC51604BC9900201B1F /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EBF1604BC9900201B1F /* ProjectsViewController.m */; };
+		9E9C2EC81604BCFB00201B1F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2EC71604BCFB00201B1F /* Default.png */; };
+		9E9C2ECC1604BD0D00201B1F /* ButtonMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2EC91604BD0D00201B1F /* ButtonMenu.png */; };
+		9E9C2ECD1604BD0D00201B1F /* icon_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2ECA1604BD0D00201B1F /* icon_r.png */; };
+		9E9C2ECE1604BD0D00201B1F /* icon_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2ECB1604BD0D00201B1F /* icon_s.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +101,10 @@
 		9E9C2EBD1604BC9900201B1F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
 		9E9C2EBE1604BC9900201B1F /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
 		9E9C2EBF1604BC9900201B1F /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
+		9E9C2EC71604BCFB00201B1F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9E9C2EC91604BD0D00201B1F /* ButtonMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonMenu.png; sourceTree = "<group>"; };
+		9E9C2ECA1604BD0D00201B1F /* icon_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_r.png; sourceTree = "<group>"; };
+		9E9C2ECB1604BD0D00201B1F /* icon_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_s.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +167,7 @@
 		9E9C2E551604B93C00201B1F /* Legacy */ = {
 			isa = PBXGroup;
 			children = (
+				9E9C2EC61604BCCC00201B1F /* Images */,
 				9E9C2E961604BA2100201B1F /* CoreData */,
 				9E9C2E951604BA1300201B1F /* MenuViewControllers */,
 				9E9C2E941604BA0B00201B1F /* PullToRefresh */,
@@ -282,6 +291,17 @@
 			name = Automation;
 			sourceTree = "<group>";
 		};
+		9E9C2EC61604BCCC00201B1F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9E9C2EC91604BD0D00201B1F /* ButtonMenu.png */,
+				9E9C2ECA1604BD0D00201B1F /* icon_r.png */,
+				9E9C2ECB1604BD0D00201B1F /* icon_s.png */,
+				9E9C2EC71604BCFB00201B1F /* Default.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -357,6 +377,10 @@
 				9E9C2E631604B93C00201B1F /* MainStoryboard_iPhone.storyboard in Resources */,
 				9E9C2E661604B93C00201B1F /* MainStoryboard_iPad.storyboard in Resources */,
 				9E9C2EA91604BBB600201B1F /* Legacy_Iron_Ore.sqlite in Resources */,
+				9E9C2EC81604BCFB00201B1F /* Default.png in Resources */,
+				9E9C2ECC1604BD0D00201B1F /* ButtonMenu.png in Resources */,
+				9E9C2ECD1604BD0D00201B1F /* icon_r.png in Resources */,
+				9E9C2ECE1604BD0D00201B1F /* icon_s.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
