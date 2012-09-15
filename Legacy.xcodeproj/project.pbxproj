@@ -28,6 +28,15 @@
 		9E9C2EA61604BB7400201B1F /* NewsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EA31604BB7400201B1F /* NewsDelegate.m */; };
 		9E9C2EA71604BB7400201B1F /* NewsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EA51604BB7400201B1F /* NewsStore.m */; };
 		9E9C2EA91604BBB600201B1F /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2EA81604BBB600201B1F /* Legacy_Iron_Ore.sqlite */; };
+		9E9C2EAF1604BC5200201B1F /* UITableViewController+ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EAC1604BC5200201B1F /* UITableViewController+ModalViewController.m */; };
+		9E9C2EB01604BC5200201B1F /* UIViewController+ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EAE1604BC5200201B1F /* UIViewController+ModalViewController.m */; };
+		9E9C2EB31604BC6E00201B1F /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EB21604BC6E00201B1F /* PullRefreshTableViewController.m */; };
+		9E9C2EC01604BC9900201B1F /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EB51604BC9900201B1F /* ContactUsViewController.m */; };
+		9E9C2EC11604BC9900201B1F /* CorporateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EB71604BC9900201B1F /* CorporateViewController.m */; };
+		9E9C2EC21604BC9900201B1F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EB91604BC9900201B1F /* MenuViewController.m */; };
+		9E9C2EC31604BC9900201B1F /* MyHoldingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EBB1604BC9900201B1F /* MyHoldingsViewController.m */; };
+		9E9C2EC41604BC9900201B1F /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EBD1604BC9900201B1F /* NewsViewController.m */; };
+		9E9C2EC51604BC9900201B1F /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EBF1604BC9900201B1F /* ProjectsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +79,24 @@
 		9E9C2EA41604BB7400201B1F /* NewsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsStore.h; sourceTree = "<group>"; };
 		9E9C2EA51604BB7400201B1F /* NewsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsStore.m; sourceTree = "<group>"; };
 		9E9C2EA81604BBB600201B1F /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
+		9E9C2EAB1604BC5200201B1F /* UITableViewController+ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+ModalViewController.h"; sourceTree = "<group>"; };
+		9E9C2EAC1604BC5200201B1F /* UITableViewController+ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+ModalViewController.m"; sourceTree = "<group>"; };
+		9E9C2EAD1604BC5200201B1F /* UIViewController+ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalViewController.h"; sourceTree = "<group>"; };
+		9E9C2EAE1604BC5200201B1F /* UIViewController+ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalViewController.m"; sourceTree = "<group>"; };
+		9E9C2EB11604BC6E00201B1F /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
+		9E9C2EB21604BC6E00201B1F /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
+		9E9C2EB41604BC9900201B1F /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		9E9C2EB51604BC9900201B1F /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		9E9C2EB61604BC9900201B1F /* CorporateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorporateViewController.h; sourceTree = "<group>"; };
+		9E9C2EB71604BC9900201B1F /* CorporateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorporateViewController.m; sourceTree = "<group>"; };
+		9E9C2EB81604BC9900201B1F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		9E9C2EB91604BC9900201B1F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		9E9C2EBA1604BC9900201B1F /* MyHoldingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHoldingsViewController.h; sourceTree = "<group>"; };
+		9E9C2EBB1604BC9900201B1F /* MyHoldingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHoldingsViewController.m; sourceTree = "<group>"; };
+		9E9C2EBC1604BC9900201B1F /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		9E9C2EBD1604BC9900201B1F /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		9E9C2EBE1604BC9900201B1F /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
+		9E9C2EBF1604BC9900201B1F /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -179,6 +206,11 @@
 		9E9C2E931604BA0500201B1F /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				9E9C2EAB1604BC5200201B1F /* UITableViewController+ModalViewController.h */,
+				9E9C2EAC1604BC5200201B1F /* UITableViewController+ModalViewController.m */,
+				9E9C2EAD1604BC5200201B1F /* UIViewController+ModalViewController.h */,
+				9E9C2EAE1604BC5200201B1F /* UIViewController+ModalViewController.m */,
+				9E9C2EAA1604BC3000201B1F /* Automation */,
 			);
 			name = Framework;
 			sourceTree = "<group>";
@@ -186,6 +218,8 @@
 		9E9C2E941604BA0B00201B1F /* PullToRefresh */ = {
 			isa = PBXGroup;
 			children = (
+				9E9C2EB11604BC6E00201B1F /* PullRefreshTableViewController.h */,
+				9E9C2EB21604BC6E00201B1F /* PullRefreshTableViewController.m */,
 			);
 			name = PullToRefresh;
 			sourceTree = "<group>";
@@ -193,6 +227,18 @@
 		9E9C2E951604BA1300201B1F /* MenuViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				9E9C2EB41604BC9900201B1F /* ContactUsViewController.h */,
+				9E9C2EB51604BC9900201B1F /* ContactUsViewController.m */,
+				9E9C2EB61604BC9900201B1F /* CorporateViewController.h */,
+				9E9C2EB71604BC9900201B1F /* CorporateViewController.m */,
+				9E9C2EB81604BC9900201B1F /* MenuViewController.h */,
+				9E9C2EB91604BC9900201B1F /* MenuViewController.m */,
+				9E9C2EBA1604BC9900201B1F /* MyHoldingsViewController.h */,
+				9E9C2EBB1604BC9900201B1F /* MyHoldingsViewController.m */,
+				9E9C2EBC1604BC9900201B1F /* NewsViewController.h */,
+				9E9C2EBD1604BC9900201B1F /* NewsViewController.m */,
+				9E9C2EBE1604BC9900201B1F /* ProjectsViewController.h */,
+				9E9C2EBF1604BC9900201B1F /* ProjectsViewController.m */,
 			);
 			name = MenuViewControllers;
 			sourceTree = "<group>";
@@ -227,6 +273,13 @@
 				9E9C2EA51604BB7400201B1F /* NewsStore.m */,
 			);
 			name = NewsNSXMLParser;
+			sourceTree = "<group>";
+		};
+		9E9C2EAA1604BC3000201B1F /* Automation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Automation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -345,6 +398,15 @@
 				9E9C2EA11604BAE700201B1F /* NewsInfo.m in Sources */,
 				9E9C2EA61604BB7400201B1F /* NewsDelegate.m in Sources */,
 				9E9C2EA71604BB7400201B1F /* NewsStore.m in Sources */,
+				9E9C2EAF1604BC5200201B1F /* UITableViewController+ModalViewController.m in Sources */,
+				9E9C2EB01604BC5200201B1F /* UIViewController+ModalViewController.m in Sources */,
+				9E9C2EB31604BC6E00201B1F /* PullRefreshTableViewController.m in Sources */,
+				9E9C2EC01604BC9900201B1F /* ContactUsViewController.m in Sources */,
+				9E9C2EC11604BC9900201B1F /* CorporateViewController.m in Sources */,
+				9E9C2EC21604BC9900201B1F /* MenuViewController.m in Sources */,
+				9E9C2EC31604BC9900201B1F /* MyHoldingsViewController.m in Sources */,
+				9E9C2EC41604BC9900201B1F /* NewsViewController.m in Sources */,
+				9E9C2EC51604BC9900201B1F /* ProjectsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
