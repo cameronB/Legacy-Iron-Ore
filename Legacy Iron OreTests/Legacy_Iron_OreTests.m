@@ -1,14 +1,14 @@
 //
-//  LegacyTests.m
-//  LegacyTests
+//  Legacy_Iron_OreTests.m
+//  Legacy Iron OreTests
 //
-//  Created by Cameron Bradley on 15/09/12.
+//  Created by Cameron Bradley on 2/09/12.
 //  Copyright (c) 2012 Cameron Bradley. All rights reserved.
 //
 
-#import "LegacyTests.h"
+#import "Legacy_Iron_OreTests.h"
 
-@implementation LegacyTests
+@implementation Legacy_Iron_OreTests
 
 - (void)setUp
 {
@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in LegacyTests");
+    STFail(@"Unit tests are not implemented yet in Legacy Iron OreTests");
 }
 
 @end

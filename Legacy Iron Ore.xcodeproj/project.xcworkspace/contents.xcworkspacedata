@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Legacy.xcodeproj">
+      location = "self:Legacy Iron Ore.xcodeproj">
    </FileRef>
 </Workspace>

@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E6A612115F364EA00C11085 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612015F364EA00C11085 /* UIKit.framework */; };
+		9E6A612315F364EA00C11085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612215F364EA00C11085 /* Foundation.framework */; };
+		9E6A612515F364EA00C11085 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612415F364EA00C11085 /* CoreGraphics.framework */; };
+		9E6A612715F364EA00C11085 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612615F364EA00C11085 /* CoreData.framework */; };
+		9E6A612D15F364EA00C11085 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A612B15F364EA00C11085 /* InfoPlist.strings */; };
+		9E6A612F15F364EA00C11085 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A612E15F364EA00C11085 /* main.m */; };
+		9E6A613315F364EA00C11085 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A613215F364EA00C11085 /* AppDelegate.m */; };
+		9E6A613615F364EA00C11085 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A613415F364EA00C11085 /* MainStoryboard_iPhone.storyboard */; };
+		9E6A613915F364EA00C11085 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A613715F364EA00C11085 /* MainStoryboard_iPad.storyboard */; };
+		9E6A613C15F364EA00C11085 /* Legacy_Iron_Ore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A613A15F364EA00C11085 /* Legacy_Iron_Ore.xcdatamodeld */; };
+		9E6A614A15F364EA00C11085 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A614915F364EA00C11085 /* SenTestingKit.framework */; };
+		9E6A614B15F364EA00C11085 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612015F364EA00C11085 /* UIKit.framework */; };
+		9E6A614C15F364EA00C11085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612215F364EA00C11085 /* Foundation.framework */; };
+		9E6A614D15F364EA00C11085 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612615F364EA00C11085 /* CoreData.framework */; };
+		9E6A615515F364EA00C11085 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A615315F364EA00C11085 /* InfoPlist.strings */; };
+		9E6A615815F364EA00C11085 /* Legacy_Iron_OreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A615715F364EA00C11085 /* Legacy_Iron_OreTests.m */; };
+		9E6A616315F3684900C11085 /* NewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A616215F3684900C11085 /* NewsViewController.m */; };
+		9E6A617015F369C300C11085 /* icon_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A616E15F369C300C11085 /* icon_r.png */; };
+		9E6A617115F369C300C11085 /* icon_s.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A616F15F369C300C11085 /* icon_s.png */; };
+		9E6A617C15F36BCF00C11085 /* NewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A617B15F36BCF00C11085 /* NewsInfo.m */; };
+		9E6A617F15F36BF100C11085 /* NewsDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A617E15F36BF100C11085 /* NewsDetails.m */; };
+		9E6A618515F3712B00C11085 /* LCYStartUpScreen.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A618415F3712B00C11085 /* LCYStartUpScreen.png */; };
+		9E6A618715F3716C00C11085 /* ButtonMenu.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A618615F3716C00C11085 /* ButtonMenu.png */; };
+		9E6A619315F3721600C11085 /* ContactUsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A618A15F3721600C11085 /* ContactUsViewController.m */; };
+		9E6A619415F3721600C11085 /* CorporateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A618C15F3721600C11085 /* CorporateViewController.m */; };
+		9E6A619515F3721600C11085 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A618E15F3721600C11085 /* MenuViewController.m */; };
+		9E6A619615F3721600C11085 /* MyHoldingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A619015F3721600C11085 /* MyHoldingsViewController.m */; };
+		9E6A619715F3721600C11085 /* ProjectsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A619215F3721600C11085 /* ProjectsViewController.m */; };
+		9E6A619B15F3725E00C11085 /* PullRefreshTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A619A15F3725E00C11085 /* PullRefreshTableViewController.m */; };
+		9E6A61A015F372D400C11085 /* UITableViewController+ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A619F15F372D400C11085 /* UITableViewController+ModalViewController.m */; };
+		9E6A61A315F3730900C11085 /* UIViewController+ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A61A215F3730900C11085 /* UIViewController+ModalViewController.m */; };
+		9E6A61A515F374A900C11085 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A61A415F374A900C11085 /* QuartzCore.framework */; };
+		9E6A623316034C5800C11085 /* NewsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A623216034C5800C11085 /* NewsStore.m */; };
+		9E6A623616034D7100C11085 /* NewsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A623516034D7100C11085 /* NewsDelegate.m */; };
+		9E6A623C160359E600C11085 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A623B160359E600C11085 /* Default.png */; };
+		9E9C2D7A1604972E00201B1F /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */; };
+		9E9C2D7B1604972E00201B1F /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9E6A614E15F364EA00C11085 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E6A611315F364EA00C11085 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E6A611B15F364EA00C11085;
+			remoteInfo = "Legacy Iron Ore";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9E6A62131601EC0400C11085 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9E6A611C15F364EA00C11085 /* Legacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E6A612015F364EA00C11085 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9E6A612215F364EA00C11085 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9E6A612415F364EA00C11085 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9E6A612615F364EA00C11085 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9E6A612A15F364EA00C11085 /* Legacy Iron Ore-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Legacy Iron Ore-Info.plist"; sourceTree = "<group>"; };
+		9E6A612C15F364EA00C11085 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E6A612E15F364EA00C11085 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E6A613015F364EA00C11085 /* Legacy Iron Ore-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Legacy Iron Ore-Prefix.pch"; sourceTree = "<group>"; };
+		9E6A613115F364EA00C11085 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9E6A613215F364EA00C11085 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9E6A613515F364EA00C11085 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		9E6A613815F364EA00C11085 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		9E6A613B15F364EA00C11085 /* Legacy_Iron_Ore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Legacy_Iron_Ore.xcdatamodel; sourceTree = "<group>"; };
+		9E6A614815F364EA00C11085 /* Legacy Iron OreTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Legacy Iron OreTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E6A614915F364EA00C11085 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		9E6A615215F364EA00C11085 /* Legacy Iron OreTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Legacy Iron OreTests-Info.plist"; sourceTree = "<group>"; };
+		9E6A615415F364EA00C11085 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9E6A615615F364EA00C11085 /* Legacy_Iron_OreTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Legacy_Iron_OreTests.h; sourceTree = "<group>"; };
+		9E6A615715F364EA00C11085 /* Legacy_Iron_OreTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Legacy_Iron_OreTests.m; sourceTree = "<group>"; };
+		9E6A616115F3684900C11085 /* NewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsViewController.h; sourceTree = "<group>"; };
+		9E6A616215F3684900C11085 /* NewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsViewController.m; sourceTree = "<group>"; };
+		9E6A616E15F369C300C11085 /* icon_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_r.png; sourceTree = "<group>"; };
+		9E6A616F15F369C300C11085 /* icon_s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_s.png; sourceTree = "<group>"; };
+		9E6A617A15F36BCF00C11085 /* NewsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfo.h; sourceTree = "<group>"; };
+		9E6A617B15F36BCF00C11085 /* NewsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfo.m; sourceTree = "<group>"; };
+		9E6A617D15F36BF100C11085 /* NewsDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetails.h; sourceTree = "<group>"; };
+		9E6A617E15F36BF100C11085 /* NewsDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetails.m; sourceTree = "<group>"; };
+		9E6A618415F3712B00C11085 /* LCYStartUpScreen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LCYStartUpScreen.png; sourceTree = "<group>"; };
+		9E6A618615F3716C00C11085 /* ButtonMenu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ButtonMenu.png; sourceTree = "<group>"; };
+		9E6A618915F3721600C11085 /* ContactUsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContactUsViewController.h; sourceTree = "<group>"; };
+		9E6A618A15F3721600C11085 /* ContactUsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContactUsViewController.m; sourceTree = "<group>"; };
+		9E6A618B15F3721600C11085 /* CorporateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CorporateViewController.h; sourceTree = "<group>"; };
+		9E6A618C15F3721600C11085 /* CorporateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CorporateViewController.m; sourceTree = "<group>"; };
+		9E6A618D15F3721600C11085 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		9E6A618E15F3721600C11085 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		9E6A618F15F3721600C11085 /* MyHoldingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyHoldingsViewController.h; sourceTree = "<group>"; };
+		9E6A619015F3721600C11085 /* MyHoldingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyHoldingsViewController.m; sourceTree = "<group>"; };
+		9E6A619115F3721600C11085 /* ProjectsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsViewController.h; sourceTree = "<group>"; };
+		9E6A619215F3721600C11085 /* ProjectsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsViewController.m; sourceTree = "<group>"; };
+		9E6A619915F3725E00C11085 /* PullRefreshTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PullRefreshTableViewController.h; sourceTree = "<group>"; };
+		9E6A619A15F3725E00C11085 /* PullRefreshTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PullRefreshTableViewController.m; sourceTree = "<group>"; };
+		9E6A619E15F372D400C11085 /* UITableViewController+ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewController+ModalViewController.h"; sourceTree = "<group>"; };
+		9E6A619F15F372D400C11085 /* UITableViewController+ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewController+ModalViewController.m"; sourceTree = "<group>"; };
+		9E6A61A115F3730900C11085 /* UIViewController+ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ModalViewController.h"; sourceTree = "<group>"; };
+		9E6A61A215F3730900C11085 /* UIViewController+ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ModalViewController.m"; sourceTree = "<group>"; };
+		9E6A61A415F374A900C11085 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		9E6A623116034C5800C11085 /* NewsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsStore.h; sourceTree = "<group>"; };
+		9E6A623216034C5800C11085 /* NewsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsStore.m; sourceTree = "<group>"; };
+		9E6A623416034D7100C11085 /* NewsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDelegate.h; sourceTree = "<group>"; };
+		9E6A623516034D7100C11085 /* NewsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDelegate.m; sourceTree = "<group>"; };
+		9E6A623B160359E600C11085 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E6A611915F364EA00C11085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6A61A515F374A900C11085 /* QuartzCore.framework in Frameworks */,
+				9E6A612115F364EA00C11085 /* UIKit.framework in Frameworks */,
+				9E6A612315F364EA00C11085 /* Foundation.framework in Frameworks */,
+				9E6A612515F364EA00C11085 /* CoreGraphics.framework in Frameworks */,
+				9E6A612715F364EA00C11085 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E6A614415F364EA00C11085 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6A614A15F364EA00C11085 /* SenTestingKit.framework in Frameworks */,
+				9E6A614B15F364EA00C11085 /* UIKit.framework in Frameworks */,
+				9E6A614C15F364EA00C11085 /* Foundation.framework in Frameworks */,
+				9E6A614D15F364EA00C11085 /* CoreData.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E6A611115F364EA00C11085 = {
+			isa = PBXGroup;
+			children = (
+				9E6A612815F364EA00C11085 /* Legacy Iron Ore */,
+				9E6A615015F364EA00C11085 /* Legacy Iron OreTests */,
+				9E6A611F15F364EA00C11085 /* Frameworks */,
+				9E6A611D15F364EA00C11085 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E6A611D15F364EA00C11085 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A611C15F364EA00C11085 /* Legacy.app */,
+				9E6A614815F364EA00C11085 /* Legacy Iron OreTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E6A611F15F364EA00C11085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A61A415F374A900C11085 /* QuartzCore.framework */,
+				9E6A612015F364EA00C11085 /* UIKit.framework */,
+				9E6A612215F364EA00C11085 /* Foundation.framework */,
+				9E6A612415F364EA00C11085 /* CoreGraphics.framework */,
+				9E6A612615F364EA00C11085 /* CoreData.framework */,
+				9E6A614915F364EA00C11085 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9E6A612815F364EA00C11085 /* Legacy Iron Ore */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A619C15F3727700C11085 /* UIFramework */,
+				9E6A619815F3724100C11085 /* PullToRefresh */,
+				9E6A618815F3717D00C11085 /* MenuViewControllers */,
+				9E6A617215F36B6700C11085 /* CoreData */,
+				9E6A616D15F3692F00C11085 /* Images */,
+				9E6A613115F364EA00C11085 /* AppDelegate.h */,
+				9E6A613215F364EA00C11085 /* AppDelegate.m */,
+				9E6A613415F364EA00C11085 /* MainStoryboard_iPhone.storyboard */,
+				9E6A613715F364EA00C11085 /* MainStoryboard_iPad.storyboard */,
+				9E6A613A15F364EA00C11085 /* Legacy_Iron_Ore.xcdatamodeld */,
+				9E6A612915F364EA00C11085 /* Supporting Files */,
+			);
+			path = "Legacy Iron Ore";
+			sourceTree = "<group>";
+		};
+		9E6A612915F364EA00C11085 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A612A15F364EA00C11085 /* Legacy Iron Ore-Info.plist */,
+				9E6A612B15F364EA00C11085 /* InfoPlist.strings */,
+				9E6A612E15F364EA00C11085 /* main.m */,
+				9E6A613015F364EA00C11085 /* Legacy Iron Ore-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E6A615015F364EA00C11085 /* Legacy Iron OreTests */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A615615F364EA00C11085 /* Legacy_Iron_OreTests.h */,
+				9E6A615715F364EA00C11085 /* Legacy_Iron_OreTests.m */,
+				9E6A615115F364EA00C11085 /* Supporting Files */,
+			);
+			path = "Legacy Iron OreTests";
+			sourceTree = "<group>";
+		};
+		9E6A615115F364EA00C11085 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A615215F364EA00C11085 /* Legacy Iron OreTests-Info.plist */,
+				9E6A615315F364EA00C11085 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E6A616D15F3692F00C11085 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A623B160359E600C11085 /* Default.png */,
+				9E6A618615F3716C00C11085 /* ButtonMenu.png */,
+				9E6A618415F3712B00C11085 /* LCYStartUpScreen.png */,
+				9E6A616E15F369C300C11085 /* icon_r.png */,
+				9E6A616F15F369C300C11085 /* icon_s.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		9E6A617215F36B6700C11085 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A617315F36B7000C11085 /* NewsEntity */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		9E6A617315F36B7000C11085 /* NewsEntity */ = {
+			isa = PBXGroup;
+			children = (
+				9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */,
+				9E6A623016034C3300C11085 /* NSXMLParser */,
+				9E6A617A15F36BCF00C11085 /* NewsInfo.h */,
+				9E6A617B15F36BCF00C11085 /* NewsInfo.m */,
+				9E6A617D15F36BF100C11085 /* NewsDetails.h */,
+				9E6A617E15F36BF100C11085 /* NewsDetails.m */,
+			);
+			name = NewsEntity;
+			sourceTree = "<group>";
+		};
+		9E6A618815F3717D00C11085 /* MenuViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A618915F3721600C11085 /* ContactUsViewController.h */,
+				9E6A618A15F3721600C11085 /* ContactUsViewController.m */,
+				9E6A618B15F3721600C11085 /* CorporateViewController.h */,
+				9E6A618C15F3721600C11085 /* CorporateViewController.m */,
+				9E6A618D15F3721600C11085 /* MenuViewController.h */,
+				9E6A618E15F3721600C11085 /* MenuViewController.m */,
+				9E6A618F15F3721600C11085 /* MyHoldingsViewController.h */,
+				9E6A619015F3721600C11085 /* MyHoldingsViewController.m */,
+				9E6A619115F3721600C11085 /* ProjectsViewController.h */,
+				9E6A619215F3721600C11085 /* ProjectsViewController.m */,
+				9E6A616115F3684900C11085 /* NewsViewController.h */,
+				9E6A616215F3684900C11085 /* NewsViewController.m */,
+			);
+			name = MenuViewControllers;
+			sourceTree = "<group>";
+		};
+		9E6A619815F3724100C11085 /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A619915F3725E00C11085 /* PullRefreshTableViewController.h */,
+				9E6A619A15F3725E00C11085 /* PullRefreshTableViewController.m */,
+			);
+			name = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		9E6A619C15F3727700C11085 /* UIFramework */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A61A115F3730900C11085 /* UIViewController+ModalViewController.h */,
+				9E6A61A215F3730900C11085 /* UIViewController+ModalViewController.m */,
+				9E6A619E15F372D400C11085 /* UITableViewController+ModalViewController.h */,
+				9E6A619F15F372D400C11085 /* UITableViewController+ModalViewController.m */,
+				9E6A619D15F3728300C11085 /* Automation */,
+			);
+			name = UIFramework;
+			sourceTree = "<group>";
+		};
+		9E6A619D15F3728300C11085 /* Automation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Automation;
+			sourceTree = "<group>";
+		};
+		9E6A623016034C3300C11085 /* NSXMLParser */ = {
+			isa = PBXGroup;
+			children = (
+				9E6A623116034C5800C11085 /* NewsStore.h */,
+				9E6A623216034C5800C11085 /* NewsStore.m */,
+				9E6A623416034D7100C11085 /* NewsDelegate.h */,
+				9E6A623516034D7100C11085 /* NewsDelegate.m */,
+			);
+			name = NSXMLParser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E6A611B15F364EA00C11085 /* Legacy Iron Ore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E6A615B15F364EA00C11085 /* Build configuration list for PBXNativeTarget "Legacy Iron Ore" */;
+			buildPhases = (
+				9E6A611815F364EA00C11085 /* Sources */,
+				9E6A611915F364EA00C11085 /* Frameworks */,
+				9E6A611A15F364EA00C11085 /* Resources */,
+				9E6A62131601EC0400C11085 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Legacy Iron Ore";
+			productName = "Legacy Iron Ore";
+			productReference = 9E6A611C15F364EA00C11085 /* Legacy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9E6A614715F364EA00C11085 /* Legacy Iron OreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E6A615E15F364EA00C11085 /* Build configuration list for PBXNativeTarget "Legacy Iron OreTests" */;
+			buildPhases = (
+				9E6A614315F364EA00C11085 /* Sources */,
+				9E6A614415F364EA00C11085 /* Frameworks */,
+				9E6A614515F364EA00C11085 /* Resources */,
+				9E6A614615F364EA00C11085 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9E6A614F15F364EA00C11085 /* PBXTargetDependency */,
+			);
+			name = "Legacy Iron OreTests";
+			productName = "Legacy Iron OreTests";
+			productReference = 9E6A614815F364EA00C11085 /* Legacy Iron OreTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E6A611315F364EA00C11085 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Cameron Bradley";
+			};
+			buildConfigurationList = 9E6A611615F364EA00C11085 /* Build configuration list for PBXProject "Legacy Iron Ore" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9E6A611115F364EA00C11085;
+			productRefGroup = 9E6A611D15F364EA00C11085 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E6A611B15F364EA00C11085 /* Legacy Iron Ore */,
+				9E6A614715F364EA00C11085 /* Legacy Iron OreTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E6A611A15F364EA00C11085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6A612D15F364EA00C11085 /* InfoPlist.strings in Resources */,
+				9E6A613615F364EA00C11085 /* MainStoryboard_iPhone.storyboard in Resources */,
+				9E6A613915F364EA00C11085 /* MainStoryboard_iPad.storyboard in Resources */,
+				9E6A617015F369C300C11085 /* icon_r.png in Resources */,
+				9E6A617115F369C300C11085 /* icon_s.png in Resources */,
+				9E6A618515F3712B00C11085 /* LCYStartUpScreen.png in Resources */,
+				9E6A618715F3716C00C11085 /* ButtonMenu.png in Resources */,
+				9E6A623C160359E600C11085 /* Default.png in Resources */,
+				9E9C2D7A1604972E00201B1F /* Legacy_Iron_Ore.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E6A614515F364EA00C11085 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6A615515F364EA00C11085 /* InfoPlist.strings in Resources */,
+				9E9C2D7B1604972E00201B1F /* Legacy_Iron_Ore.sqlite in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9E6A614615F364EA00C11085 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E6A611815F364EA00C11085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6A612F15F364EA00C11085 /* main.m in Sources */,
+				9E6A613315F364EA00C11085 /* AppDelegate.m in Sources */,
+				9E6A613C15F364EA00C11085 /* Legacy_Iron_Ore.xcdatamodeld in Sources */,
+				9E6A616315F3684900C11085 /* NewsViewController.m in Sources */,
+				9E6A617C15F36BCF00C11085 /* NewsInfo.m in Sources */,
+				9E6A617F15F36BF100C11085 /* NewsDetails.m in Sources */,
+				9E6A619315F3721600C11085 /* ContactUsViewController.m in Sources */,
+				9E6A619415F3721600C11085 /* CorporateViewController.m in Sources */,
+				9E6A619515F3721600C11085 /* MenuViewController.m in Sources */,
+				9E6A619615F3721600C11085 /* MyHoldingsViewController.m in Sources */,
+				9E6A619715F3721600C11085 /* ProjectsViewController.m in Sources */,
+				9E6A619B15F3725E00C11085 /* PullRefreshTableViewController.m in Sources */,
+				9E6A61A015F372D400C11085 /* UITableViewController+ModalViewController.m in Sources */,
+				9E6A61A315F3730900C11085 /* UIViewController+ModalViewController.m in Sources */,
+				9E6A623316034C5800C11085 /* NewsStore.m in Sources */,
+				9E6A623616034D7100C11085 /* NewsDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E6A614315F364EA00C11085 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E6A615815F364EA00C11085 /* Legacy_Iron_OreTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9E6A614F15F364EA00C11085 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9E6A611B15F364EA00C11085 /* Legacy Iron Ore */;
+			targetProxy = 9E6A614E15F364EA00C11085 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9E6A612B15F364EA00C11085 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E6A612C15F364EA00C11085 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9E6A613415F364EA00C11085 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E6A613515F364EA00C11085 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		9E6A613715F364EA00C11085 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E6A613815F364EA00C11085 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		9E6A615315F364EA00C11085 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E6A615415F364EA00C11085 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E6A615915F364EA00C11085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E6A615A15F364EA00C11085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E6A615C15F364EA00C11085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Legacy Iron Ore/Legacy Iron Ore-Prefix.pch";
+				INFOPLIST_FILE = "Legacy Iron Ore/Legacy Iron Ore-Info.plist";
+				PRODUCT_NAME = Legacy;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9E6A615D15F364EA00C11085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Legacy Iron Ore/Legacy Iron Ore-Prefix.pch";
+				INFOPLIST_FILE = "Legacy Iron Ore/Legacy Iron Ore-Info.plist";
+				PRODUCT_NAME = Legacy;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9E6A615F15F364EA00C11085 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Legacy Iron Ore.app/Legacy Iron Ore";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Legacy Iron Ore/Legacy Iron Ore-Prefix.pch";
+				INFOPLIST_FILE = "Legacy Iron OreTests/Legacy Iron OreTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9E6A616015F364EA00C11085 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Legacy Iron Ore.app/Legacy Iron Ore";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Legacy Iron Ore/Legacy Iron Ore-Prefix.pch";
+				INFOPLIST_FILE = "Legacy Iron OreTests/Legacy Iron OreTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E6A611615F364EA00C11085 /* Build configuration list for PBXProject "Legacy Iron Ore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E6A615915F364EA00C11085 /* Debug */,
+				9E6A615A15F364EA00C11085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E6A615B15F364EA00C11085 /* Build configuration list for PBXNativeTarget "Legacy Iron Ore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E6A615C15F364EA00C11085 /* Debug */,
+				9E6A615D15F364EA00C11085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E6A615E15F364EA00C11085 /* Build configuration list for PBXNativeTarget "Legacy Iron OreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E6A615F15F364EA00C11085 /* Debug */,
+				9E6A616015F364EA00C11085 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9E6A613A15F364EA00C11085 /* Legacy_Iron_Ore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9E6A613B15F364EA00C11085 /* Legacy_Iron_Ore.xcdatamodel */,
+			);
+			currentVersion = 9E6A613B15F364EA00C11085 /* Legacy_Iron_Ore.xcdatamodel */;
+			path = Legacy_Iron_Ore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9E6A611315F364EA00C11085 /* Project object */;
+}

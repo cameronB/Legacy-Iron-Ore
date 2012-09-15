@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Legacy.xcscheme</key>
+		<key>Legacy Iron Ore.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,12 +12,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>9E9C2E481604B93C00201B1F</key>
+		<key>9E6A611B15F364EA00C11085</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9E9C2E741604B93D00201B1F</key>
+		<key>9E6A614715F364EA00C11085</key>
 		<dict>
 			<key>primary</key>
 			<true/>

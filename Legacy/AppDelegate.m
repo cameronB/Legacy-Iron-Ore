@@ -1,14 +1,18 @@
 //
 //  AppDelegate.m
-//  Legacy
+//  Legacy Iron Ore
 //
-//  Created by Cameron Bradley on 15/09/12.
+//  Created by Cameron Bradley on 2/09/12.
 //  Copyright (c) 2012 Cameron Bradley. All rights reserved.
 //
 
 #import "AppDelegate.h"
+#import "NewsViewController.h"
+#import "NewsInfo.h"
+#import "NewsDetails.h"
+#import "NewsDelegate.h"
+#import "NewsStore.h"
 
-#import "MasterViewController.h"
 
 @implementation AppDelegate
 
@@ -18,21 +22,81 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+   
+    //applicate launched, get latest news from external xml source, front page and store in core data.
+    [self getXMLForLatestNews];
+    
     // Override point for customization after application launch.
-    if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPad) {
-        UISplitViewController *splitViewController = (UISplitViewController *)self.window.rootViewController;
-        UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
-        splitViewController.delegate = (id)navigationController.topViewController;
-        
-        UINavigationController *masterNavigationController = [splitViewController.viewControllers objectAtIndex:0];
-        MasterViewController *controller = (MasterViewController *)masterNavigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
-    } else {
-        UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-        MasterViewController *controller = (MasterViewController *)navigationController.topViewController;
-        controller.managedObjectContext = self.managedObjectContext;
-    }
+    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    NewsViewController *controller = (NewsViewController *)navigationController.topViewController;
+    controller.managedObjectContext = self.managedObjectContext;
+    
     return YES;
+}
+
+- (void)getXMLForLatestNews {
+    
+    NSManagedObjectContext *context = [self managedObjectContext];
+    
+    NewsDelegate *newsDelegate;
+    
+    //send URL to xmlParser
+    newsDelegate = [[NewsDelegate alloc] loadXMLByURL:@"http://www.complr.com/Legacy/xml/news.php"];
+    
+    int i = 0;
+    
+    //count number of clubs from the XMLParser
+    NSInteger count = [[newsDelegate news] count];
+    
+    //Determine current news id in core data.
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"NewsInfo"
+                                              inManagedObjectContext:context];
+    [fetchRequest setEntity:entity];
+    NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:nil];
+    
+    NSMutableArray * allPrimaryKeys = [[fetchedObjects valueForKeyPath:@"newsId"] mutableCopy];
+   
+    //do while (number of clubs)
+    do {
+        
+        NewsStore *newsStore = [[newsDelegate news] objectAtIndex:i];
+        NSString *newsId = [newsStore newsId];
+        
+        if ([allPrimaryKeys containsObject:newsId]) {
+            //news id (Primary key) found do nothing.
+ 
+        } else {
+            //news id (Primary Key) not found insert new entry into coredata.
+            
+            NewsInfo *newsInfo = [NSEntityDescription
+                                  insertNewObjectForEntityForName:@"NewsInfo"
+                                  inManagedObjectContext:context];
+            
+            newsInfo.newsId = [newsStore newsId];
+            newsInfo.newsName = [newsStore newsName];
+            
+            NewsDetails *newsDetails = [NSEntityDescription
+                                        insertNewObjectForEntityForName:@"NewsDetails"
+                                        inManagedObjectContext:context];
+            
+            newsDetails.newsDescription = [newsStore newsDescription];
+            newsDetails.newsLink = [newsStore newsLink];
+            
+            newsDetails.info = newsInfo;
+            newsInfo.details = newsDetails;
+            
+            NSError *error;
+            if (![context save:&error]) {
+                NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+            }
+        }
+        
+        i++;
+        
+    } while (i < count);
+    
+    NSLog(@"retrieved latest news from external xml");
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -102,7 +166,8 @@
     if (_managedObjectModel != nil) {
         return _managedObjectModel;
     }
-    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Legacy" withExtension:@"momd"];
+    
+    NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"Legacy_Iron_Ore" withExtension:@"momd"];
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
     return _managedObjectModel;
 }
@@ -115,7 +180,16 @@
         return _persistentStoreCoordinator;
     }
     
-    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Legacy.sqlite"];
+    NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"Legacy_Iron_Ore.sqlite"];
+
+    if (![[NSFileManager defaultManager] fileExistsAtPath:[storeURL path]]) {
+        NSURL *preloadURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"Legacy_Iron_Ore" ofType:@"sqlite"]];
+        NSError* err = nil;
+        
+        if (![[NSFileManager defaultManager] copyItemAtURL:preloadURL toURL:storeURL error:&err]) {
+            NSLog(@"Oops, could copy preloaded data");
+        }
+    }
     
     NSError *error = nil;
     _persistentStoreCoordinator = [[NSPersistentStoreCoordinator alloc] initWithManagedObjectModel:[self managedObjectModel]];

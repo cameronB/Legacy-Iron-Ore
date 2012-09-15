@@ -1,14 +1,17 @@
 //
 //  AppDelegate.h
-//  Legacy
+//  Legacy Iron Ore
 //
-//  Created by Cameron Bradley on 15/09/12.
+//  Created by Cameron Bradley on 2/09/12.
 //  Copyright (c) 2012 Cameron Bradley. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+
+    
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
@@ -18,5 +21,6 @@
 
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
+- (void)getXMLForLatestNews;
 
 @end
