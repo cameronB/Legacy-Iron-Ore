@@ -54,6 +54,13 @@
 			remoteGlobalIDString = 9E6A611B15F364EA00C11085;
 			remoteInfo = "Legacy Iron Ore";
 		};
+		9E86989D1604C7B700CE5231 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9E8698991604C7B600CE5231 /* LegacyNews.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9E8698821604C7B600CE5231;
+			remoteInfo = LegacyNews;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -121,6 +128,7 @@
 		9E6A623416034D7100C11085 /* NewsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDelegate.h; sourceTree = "<group>"; };
 		9E6A623516034D7100C11085 /* NewsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDelegate.m; sourceTree = "<group>"; };
 		9E6A623B160359E600C11085 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		9E8698991604C7B600CE5231 /* LegacyNews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LegacyNews.xcodeproj; path = LegacyNews/LegacyNews.xcodeproj; sourceTree = "<group>"; };
 		9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -154,6 +162,7 @@
 		9E6A611115F364EA00C11085 = {
 			isa = PBXGroup;
 			children = (
+				9E8698991604C7B600CE5231 /* LegacyNews.xcodeproj */,
 				9E6A612815F364EA00C11085 /* Legacy Iron Ore */,
 				9E6A615015F364EA00C11085 /* Legacy Iron OreTests */,
 				9E6A611F15F364EA00C11085 /* Frameworks */,
@@ -322,6 +331,14 @@
 			name = NSXMLParser;
 			sourceTree = "<group>";
 		};
+		9E86989A1604C7B600CE5231 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E86989E1604C7B700CE5231 /* LegacyNews */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,6 +398,12 @@
 			mainGroup = 9E6A611115F364EA00C11085;
 			productRefGroup = 9E6A611D15F364EA00C11085 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9E86989A1604C7B600CE5231 /* Products */;
+					ProjectRef = 9E8698991604C7B600CE5231 /* LegacyNews.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				9E6A611B15F364EA00C11085 /* Legacy Iron Ore */,
@@ -388,6 +411,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9E86989E1604C7B700CE5231 /* LegacyNews */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.executable";
+			path = LegacyNews;
+			remoteRef = 9E86989D1604C7B700CE5231 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		9E6A611A15F364EA00C11085 /* Resources */ = {
