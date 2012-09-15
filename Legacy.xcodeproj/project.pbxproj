@@ -17,14 +17,14 @@
 		9E9C2E631604B93C00201B1F /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2E611604B93C00201B1F /* MainStoryboard_iPhone.storyboard */; };
 		9E9C2E661604B93C00201B1F /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2E641604B93C00201B1F /* MainStoryboard_iPad.storyboard */; };
 		9E9C2E691604B93D00201B1F /* Legacy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2E671604B93D00201B1F /* Legacy.xcdatamodeld */; };
-		9E9C2E6C1604B93D00201B1F /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2E6B1604B93D00201B1F /* MasterViewController.m */; };
-		9E9C2E6F1604B93D00201B1F /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2E6E1604B93D00201B1F /* DetailViewController.m */; };
 		9E9C2E771604B93D00201B1F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9C2E761604B93D00201B1F /* SenTestingKit.framework */; };
 		9E9C2E781604B93D00201B1F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9C2E4D1604B93C00201B1F /* UIKit.framework */; };
 		9E9C2E791604B93D00201B1F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9C2E4F1604B93C00201B1F /* Foundation.framework */; };
 		9E9C2E7A1604B93D00201B1F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E9C2E531604B93C00201B1F /* CoreData.framework */; };
 		9E9C2E821604B93D00201B1F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2E801604B93D00201B1F /* InfoPlist.strings */; };
 		9E9C2E851604B93D00201B1F /* LegacyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2E841604B93D00201B1F /* LegacyTests.m */; };
+		9E9C2E9E1604BAD400201B1F /* NewsDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2E9D1604BAD400201B1F /* NewsDetails.m */; };
+		9E9C2EA11604BAE700201B1F /* NewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E9C2EA01604BAE700201B1F /* NewsInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,16 +52,16 @@
 		9E9C2E621604B93C00201B1F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		9E9C2E651604B93C00201B1F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		9E9C2E681604B93D00201B1F /* Legacy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Legacy.xcdatamodel; sourceTree = "<group>"; };
-		9E9C2E6A1604B93D00201B1F /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		9E9C2E6B1604B93D00201B1F /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		9E9C2E6D1604B93D00201B1F /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		9E9C2E6E1604B93D00201B1F /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9E9C2E751604B93D00201B1F /* LegacyTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LegacyTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E9C2E761604B93D00201B1F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		9E9C2E7F1604B93D00201B1F /* LegacyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LegacyTests-Info.plist"; sourceTree = "<group>"; };
 		9E9C2E811604B93D00201B1F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9E9C2E831604B93D00201B1F /* LegacyTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LegacyTests.h; sourceTree = "<group>"; };
 		9E9C2E841604B93D00201B1F /* LegacyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LegacyTests.m; sourceTree = "<group>"; };
+		9E9C2E9C1604BAD400201B1F /* NewsDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsDetails.h; sourceTree = "<group>"; };
+		9E9C2E9D1604BAD400201B1F /* NewsDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsDetails.m; sourceTree = "<group>"; };
+		9E9C2E9F1604BAE700201B1F /* NewsInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsInfo.h; sourceTree = "<group>"; };
+		9E9C2EA01604BAE700201B1F /* NewsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,14 +124,14 @@
 		9E9C2E551604B93C00201B1F /* Legacy */ = {
 			isa = PBXGroup;
 			children = (
+				9E9C2E961604BA2100201B1F /* CoreData */,
+				9E9C2E951604BA1300201B1F /* MenuViewControllers */,
+				9E9C2E941604BA0B00201B1F /* PullToRefresh */,
+				9E9C2E931604BA0500201B1F /* Framework */,
 				9E9C2E5E1604B93C00201B1F /* AppDelegate.h */,
 				9E9C2E5F1604B93C00201B1F /* AppDelegate.m */,
 				9E9C2E611604B93C00201B1F /* MainStoryboard_iPhone.storyboard */,
 				9E9C2E641604B93C00201B1F /* MainStoryboard_iPad.storyboard */,
-				9E9C2E6A1604B93D00201B1F /* MasterViewController.h */,
-				9E9C2E6B1604B93D00201B1F /* MasterViewController.m */,
-				9E9C2E6D1604B93D00201B1F /* DetailViewController.h */,
-				9E9C2E6E1604B93D00201B1F /* DetailViewController.m */,
 				9E9C2E671604B93D00201B1F /* Legacy.xcdatamodeld */,
 				9E9C2E561604B93C00201B1F /* Supporting Files */,
 			);
@@ -166,6 +166,54 @@
 				9E9C2E801604B93D00201B1F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9E9C2E931604BA0500201B1F /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		9E9C2E941604BA0B00201B1F /* PullToRefresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = PullToRefresh;
+			sourceTree = "<group>";
+		};
+		9E9C2E951604BA1300201B1F /* MenuViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = MenuViewControllers;
+			sourceTree = "<group>";
+		};
+		9E9C2E961604BA2100201B1F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9E9C2E971604BA2700201B1F /* NewsEntities */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		9E9C2E971604BA2700201B1F /* NewsEntities */ = {
+			isa = PBXGroup;
+			children = (
+				9E9C2E981604BA3A00201B1F /* NewsNSXMLParser */,
+				9E9C2E9C1604BAD400201B1F /* NewsDetails.h */,
+				9E9C2E9D1604BAD400201B1F /* NewsDetails.m */,
+				9E9C2E9F1604BAE700201B1F /* NewsInfo.h */,
+				9E9C2EA01604BAE700201B1F /* NewsInfo.m */,
+			);
+			name = NewsEntities;
+			sourceTree = "<group>";
+		};
+		9E9C2E981604BA3A00201B1F /* NewsNSXMLParser */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = NewsNSXMLParser;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,8 +327,8 @@
 				9E9C2E5C1604B93C00201B1F /* main.m in Sources */,
 				9E9C2E601604B93C00201B1F /* AppDelegate.m in Sources */,
 				9E9C2E691604B93D00201B1F /* Legacy.xcdatamodeld in Sources */,
-				9E9C2E6C1604B93D00201B1F /* MasterViewController.m in Sources */,
-				9E9C2E6F1604B93D00201B1F /* DetailViewController.m in Sources */,
+				9E9C2E9E1604BAD400201B1F /* NewsDetails.m in Sources */,
+				9E9C2EA11604BAE700201B1F /* NewsInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,6 +512,7 @@
 				9E9C2E8A1604B93D00201B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9E9C2E8B1604B93D00201B1F /* Build configuration list for PBXNativeTarget "LegacyTests" */ = {
 			isa = XCConfigurationList;
@@ -472,6 +521,7 @@
 				9E9C2E8D1604B93D00201B1F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
