@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E56E8AB1605E4DB00479767 /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E56E8AA1605E4DB00479767 /* Legacy_Iron_Ore.sqlite */; };
+		9E56E8AC1605E4DB00479767 /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E56E8AA1605E4DB00479767 /* Legacy_Iron_Ore.sqlite */; };
 		9E6A612115F364EA00C11085 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612015F364EA00C11085 /* UIKit.framework */; };
 		9E6A612315F364EA00C11085 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612215F364EA00C11085 /* Foundation.framework */; };
 		9E6A612515F364EA00C11085 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E6A612415F364EA00C11085 /* CoreGraphics.framework */; };
@@ -43,7 +45,6 @@
 		9E6A623616034D7100C11085 /* NewsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A623516034D7100C11085 /* NewsDelegate.m */; };
 		9E6A623C160359E600C11085 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A623B160359E600C11085 /* Default.png */; };
 		9E8698FA160571B600CE5231 /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8698F9160571B600CE5231 /* BackgroundLayer.m */; };
-		9E8699691605D40F00CE5231 /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E8699681605D40F00CE5231 /* Legacy_Iron_Ore.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +77,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		9E56E8AA1605E4DB00479767 /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
 		9E6A611C15F364EA00C11085 /* Legacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Legacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E6A612015F364EA00C11085 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9E6A612215F364EA00C11085 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,7 +133,6 @@
 		9E8698991604C7B600CE5231 /* LegacyNews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LegacyNews.xcodeproj; path = LegacyNews/LegacyNews.xcodeproj; sourceTree = "<group>"; };
 		9E8698F8160571B600CE5231 /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
 		9E8698F9160571B600CE5231 /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
-		9E8699681605D40F00CE5231 /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -257,7 +258,7 @@
 		9E6A617215F36B6700C11085 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				9E8699681605D40F00CE5231 /* Legacy_Iron_Ore.sqlite */,
+				9E56E8AA1605E4DB00479767 /* Legacy_Iron_Ore.sqlite */,
 				9E6A617315F36B7000C11085 /* NewsEntity */,
 			);
 			name = CoreData;
@@ -447,6 +448,7 @@
 				9E6A618515F3712B00C11085 /* LCYStartUpScreen.png in Resources */,
 				9E6A618715F3716C00C11085 /* ButtonMenu.png in Resources */,
 				9E6A623C160359E600C11085 /* Default.png in Resources */,
+				9E56E8AB1605E4DB00479767 /* Legacy_Iron_Ore.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,7 +457,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E6A615515F364EA00C11085 /* InfoPlist.strings in Resources */,
-				9E8699691605D40F00CE5231 /* Legacy_Iron_Ore.sqlite in Resources */,
+				9E56E8AC1605E4DB00479767 /* Legacy_Iron_Ore.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
