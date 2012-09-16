@@ -104,7 +104,7 @@
 		9E86988A1604C7B600CE5231 /* LegacyNews */ = {
 			isa = PBXGroup;
 			children = (
-				9E8699671605D33100CE5231 /* Legacy_Iron_Ore.sqlite */,
+				9E8699371605ACEB00CE5231 /* CoreData */,
 				9E8698A01604C7E500CE5231 /* NSXMLParser */,
 				9E8698AD1604C84F00CE5231 /* main.m */,
 				9E8698AF1604C8AA00CE5231 /* Legacy_Iron_Ore.xcdatamodeld */,
@@ -127,7 +127,6 @@
 			children = (
 				9E86993B1605ADF600CE5231 /* Projects */,
 				9E8699391605AD6100CE5231 /* News */,
-				9E8699371605ACEB00CE5231 /* CoreData */,
 			);
 			name = NSXMLParser;
 			sourceTree = "<group>";
@@ -146,6 +145,7 @@
 		9E8699371605ACEB00CE5231 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				9E8699671605D33100CE5231 /* Legacy_Iron_Ore.sqlite */,
 				9E86993A1605ADEA00CE5231 /* News */,
 				9E86992D1605AC8900CE5231 /* Projects */,
 			);
