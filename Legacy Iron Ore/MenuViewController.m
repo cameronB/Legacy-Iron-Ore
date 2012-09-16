@@ -17,15 +17,21 @@
 
 @implementation MenuViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //Add gradient background
+    CAGradientLayer *bgLayer = [BackgroundLayer blueGradient];
+	bgLayer.frame = self.view.bounds;
+    [self.view.layer insertSublayer:bgLayer atIndex:0];
+}
+
 //initilize view programmatically
 - (void) loadView {
     
     //allocate view
     UIView *view = [[UIView alloc] initWithFrame:[UIScreen
                                                   mainScreen].applicationFrame];
-    
-    //add background default_bg image to view
-    view.backgroundColor = [UIColor whiteColor];
     
     self.view = view;
     

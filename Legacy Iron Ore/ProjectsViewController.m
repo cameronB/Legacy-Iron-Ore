@@ -14,6 +14,14 @@
 
 @implementation ProjectsViewController
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    //Add gradient background
+    CAGradientLayer *bgLayer = [BackgroundLayer blueGradient];
+	bgLayer.frame = self.view.bounds;
+    [self.view.layer insertSublayer:bgLayer atIndex:0];
+}
 
 - (void)viewDidLoad
 {
@@ -21,7 +29,7 @@
     [super viewDidLoad];
     
     //set the title for the default news view controller
-    self.navigationItem.title = @"Legacy Iron Ore";
+    self.navigationItem.title = @"Projects";
     
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
     

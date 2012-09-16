@@ -25,6 +25,7 @@
     return self;
 }
 
+
 - (NSFetchedResultsController *)fetchedResultsController {
     
     if (_fetchedResultsController != nil) {
@@ -110,7 +111,7 @@
     [super viewDidLoad];
     
     //set the title for the default news view controller
-    self.navigationItem.title = @"Legacy News";
+    self.navigationItem.title = @"Legacy Iron Ore";
     
     if (managedObjectContext == nil)
     {
