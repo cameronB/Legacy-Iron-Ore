@@ -1,20 +1,20 @@
 //
-//  NewsDelegate.m
-//  Legacy Iron Ore
+//  ProjectsDelegate.m
+//  LegacyNews
 //
-//  Created by Cameron Bradley on 14/09/12.
+//  Created by Cameron Bradley on 16/09/12.
 //  Copyright (c) 2012 Cameron Bradley. All rights reserved.
 //
 
-#import "NewsDelegate.h"
+#import "ProjectsDelegate.h"
 
-@implementation NewsDelegate
+@implementation ProjectsDelegate
 
-@synthesize news, parser;
+@synthesize projects, parser;
 
--(id) loadNewsXMLByURL:(NSString *)urlString {
+-(id) loadProjectsXMLByURL:(NSString *)urlString {
     
-    news          = [[NSMutableArray alloc] init];
+    projects        = [[NSMutableArray alloc] init];
     NSURL *url      = [NSURL URLWithString:urlString];
     NSData  *data   = [[NSData alloc] initWithContentsOfURL:url];
     parser          = [[NSXMLParser alloc] initWithData:data];
@@ -26,34 +26,29 @@
 
 - (void) parser:(NSXMLParser *)parser didStartElement:(NSString *)elementname namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict
 {
-    if ([elementname isEqualToString:@"news"])
+    if ([elementname isEqualToString:@"project"])
     {
-        newsStore = [NewsStore alloc];
+        projectsStore = [ProjectsStore alloc];
     }
 }
 
 - (void) parser:(NSXMLParser *)parser didEndElement:(NSString *)elementname namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName
 {
-    if ([elementname isEqualToString:@"newsId"])
+    if ([elementname isEqualToString:@"projectId"])
     {
-        newsStore.newsId = currentNodeContent;
+        projectsStore.projectId = currentNodeContent;
     }
-    if ([elementname isEqualToString:@"newsName"])
+    if ([elementname isEqualToString:@"projectName"])
     {
-        newsStore.newsName = currentNodeContent;
+        projectsStore.projectName = currentNodeContent;
     }
-    if ([elementname isEqualToString:@"newsDescription"])
+    if ([elementname isEqualToString:@"projectDescription"])
     {
-        newsStore.newsDescription = currentNodeContent;
-    }
-    if ([elementname isEqualToString:@"newsLink"])
+        projectsStore.projectDescription = currentNodeContent;
+    }   
+    if ([elementname isEqualToString:@"project"])
     {
-        newsStore.newsLink = currentNodeContent;
-    }
-    
-    if ([elementname isEqualToString:@"news"])
-    {
-        [news addObject:newsStore];
+        [projects addObject:projectsStore];
     }
 }
 
@@ -61,5 +56,6 @@
 {
     currentNodeContent = (NSMutableString *) [string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];
 }
+
 
 @end

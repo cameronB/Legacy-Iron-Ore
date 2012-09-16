@@ -6,8 +6,6 @@
 //  Copyright (c) 2012 Cameron Bradley. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
-
 @interface NewsStore : NSObject {
 
     NSString *newsId;

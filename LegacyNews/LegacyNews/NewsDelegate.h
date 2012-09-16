@@ -6,7 +6,6 @@
 //  Copyright (c) 2012 Cameron Bradley. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "NewsStore.h"
 
 @interface NewsDelegate : NSObject <NSXMLParserDelegate> {
@@ -20,6 +19,6 @@
 @property (readonly, retain) NSMutableArray *news;
 @property (readonly, retain) NSXMLParser *parser;
 
-- (id) loadXMLByURL:(NSString *)urlString;
+- (id) loadNewsXMLByURL:(NSString *)urlString;
 
 @end

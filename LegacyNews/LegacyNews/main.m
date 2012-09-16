@@ -10,6 +10,10 @@
 #import "NewsDetails.h"
 #import "NewsStore.h"
 #import "NewsDelegate.h"
+#import "ProjectInfo.h"
+#import "ProjectDetails.h"
+#import "ProjectsStore.h"
+#import "ProjectsDelegate.h"
 
 static NSManagedObjectModel *managedObjectModel()
 {
@@ -69,33 +73,32 @@ int main(int argc, const char * argv[])
             exit(1);
         }
         
-        
         NewsDelegate *newsDelegate;
         
         //send URL to xmlParser
-        newsDelegate = [[NewsDelegate alloc] loadXMLByURL:@"http://www.complr.com/Legacy/xml/news.php"];
+        newsDelegate = [[NewsDelegate alloc] loadNewsXMLByURL:@"http://www.complr.com/Legacy/xml/news.php"];
         
-        int i = 0;
+        int iNewsCounter = 0;
         
         //count number of clubs from the XMLParser
-        NSInteger count = [[newsDelegate news] count];
+        NSInteger newsXMLResultsCounter = [[newsDelegate news] count];
         
         //Determine current news id in core data.
-        NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
-        NSEntityDescription *entity = [NSEntityDescription entityForName:@"NewsInfo"
+        NSFetchRequest *newsFetchRequest = [[NSFetchRequest alloc] init];
+        NSEntityDescription *newsEntity = [NSEntityDescription entityForName:@"NewsInfo"
                                                   inManagedObjectContext:context];
-        [fetchRequest setEntity:entity];
-        NSArray *fetchedObjects = [context executeFetchRequest:fetchRequest error:nil];
+        [newsFetchRequest setEntity:newsEntity];
+        NSArray *newsFetchedObjects = [context executeFetchRequest:newsFetchRequest error:nil];
         
-        NSMutableArray * allPrimaryKeys = [[fetchedObjects valueForKeyPath:@"newsId"] mutableCopy];
+        NSMutableArray * allNewsPrimaryKeys = [[newsFetchedObjects valueForKeyPath:@"newsId"] mutableCopy];
         
         //do while (number of clubs)
         do {
             
-            NewsStore *newsStore = [[newsDelegate news] objectAtIndex:i];
+            NewsStore *newsStore = [[newsDelegate news] objectAtIndex:iNewsCounter];
             NSString *newsId = [newsStore newsId];
             
-            if ([allPrimaryKeys containsObject:newsId]) {
+            if ([allNewsPrimaryKeys containsObject:newsId]) {
                 //news id (Primary key) found do nothing.
                 
             } else {
@@ -124,11 +127,83 @@ int main(int argc, const char * argv[])
                 }
             }
             
-            i++;
+            iNewsCounter++;
             
-        } while (i < count);
+        } while (iNewsCounter < newsXMLResultsCounter);
         
-        NSLog(@"retrieved latest news from external xml");
+        NSLog(@"retrieved latest news from external xml and stored in core data");
+        for (NewsInfo *info in newsFetchedObjects) {
+            NSLog(@"id: %@", info.newsId);
+            NSLog(@"name: %@", info.newsName);
+            NewsDetails *details = info.details;
+            NSLog(@"description: %@", details.newsDescription);
+            NSLog(@"link: %@", details.newsLink);
+        }
+        
+        ProjectsDelegate *projectsDelegate;
+        
+        //send URL to xmlParser
+        projectsDelegate = [[ProjectsDelegate alloc] loadProjectsXMLByURL:@"http://www.complr.com/Legacy/xml/projects.php"];
+        
+        int iProjectsCounter = 0;
+        
+        //count number of clubs from the XMLParser
+        NSInteger projectsXmlResultsCount = [[projectsDelegate projects] count];
+        
+        //Determine current news id in core data.
+        NSFetchRequest *projectsFetchRequest = [[NSFetchRequest alloc] init];
+        NSEntityDescription *projectsEntity = [NSEntityDescription entityForName:@"ProjectInfo"
+                                                          inManagedObjectContext:context];
+        [projectsFetchRequest setEntity:projectsEntity];
+        NSArray *projectsFetchedObjects = [context executeFetchRequest:projectsFetchRequest error:nil];
+        
+        NSMutableArray * allProjectsPrimaryKeys = [[projectsFetchedObjects valueForKeyPath:@"projectId"] mutableCopy];
+        
+        //do while (number of clubs)
+        do {
+            
+            ProjectsStore *projectsStore = [[projectsDelegate projects] objectAtIndex:iProjectsCounter];
+            NSString *projectId = [projectsStore projectId];
+            
+            if ([allProjectsPrimaryKeys containsObject:projectId]) {
+                //news id (Primary key) found do nothing.
+                
+            } else {
+                //news id (Primary Key) not found insert new entry into coredata.
+                
+                ProjectInfo *projectInfo = [NSEntityDescription
+                                            insertNewObjectForEntityForName:@"ProjectInfo"
+                                            inManagedObjectContext:context];
+                
+                projectInfo.projectId = [projectsStore projectId];
+                projectInfo.projectName = [projectsStore projectName];
+                
+                ProjectDetails *projectDetails = [NSEntityDescription
+                                                  insertNewObjectForEntityForName:@"ProjectDetails"
+                                                  inManagedObjectContext:context];
+                
+                projectDetails.projectDescription = [projectsStore projectDescription];
+                
+                projectDetails.info = projectInfo;
+                projectInfo.details = projectDetails;
+                
+                NSError *error;
+                if (![context save:&error]) {
+                    NSLog(@"Whoops, couldn't save: %@", [error localizedDescription]);
+                }
+            }
+            
+            iProjectsCounter++;
+            
+        } while (iProjectsCounter < projectsXmlResultsCount);
+        
+        NSLog(@"retrieved latest projects from external xml and stored in core data");
+        for (ProjectInfo *info in projectsFetchedObjects) {
+            NSLog(@"id: %@", info.projectId);
+            NSLog(@"name: %@", info.projectName);
+            ProjectDetails *details = info.details;
+            NSLog(@"description: %@", details.projectDescription);
+        }
     }
     
     return 0;

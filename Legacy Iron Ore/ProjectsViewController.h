@@ -6,13 +6,11 @@
 //
 //
 
-#import <UIKit/UIKit.h>
-#import <QuartzCore/QuartzCore.h>
-#import <Foundation/Foundation.h>
 #import "PullRefreshTableViewController.h"
 
-@interface ProjectsViewController : PullRefreshTableViewController <NSXMLParserDelegate> {
-    
-}
+@interface ProjectsViewController : PullRefreshTableViewController <NSFetchedResultsControllerDelegate>
+
+@property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
+@property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 @end

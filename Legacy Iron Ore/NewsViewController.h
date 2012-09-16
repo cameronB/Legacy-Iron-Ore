@@ -12,7 +12,6 @@
 @interface NewsViewController : PullRefreshTableViewController <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic,strong) NSManagedObjectContext* managedObjectContext;
-
 @property (nonatomic, retain) NSFetchedResultsController *fetchedResultsController;
 
 @end

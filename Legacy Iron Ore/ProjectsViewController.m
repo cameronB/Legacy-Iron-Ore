@@ -7,12 +7,12 @@
 //
 
 #import "ProjectsViewController.h"
-
 #import "NewsViewController.h"
 #import "MenuViewController.h"
 #import "UITableViewController+ModalViewController.h"
 
 @implementation ProjectsViewController
+
 
 - (void)viewWillAppear:(BOOL)animated
 {
@@ -20,7 +20,11 @@
     //Add gradient background
     CAGradientLayer *bgLayer = [BackgroundLayer blueGradient];
 	bgLayer.frame = self.view.bounds;
-    [self.view.layer insertSublayer:bgLayer atIndex:0];
+    
+    //set background for table view
+    UIView *tableBackgroundView = [[UIView alloc] init];
+    [tableBackgroundView.layer insertSublayer:bgLayer atIndex:0];
+    [self.tableView setBackgroundView:tableBackgroundView];
 }
 
 - (void)viewDidLoad

@@ -13,8 +13,19 @@
         <relationship name="details" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="NewsDetails" inverseName="info" inverseEntity="NewsDetails" syncable="YES"/>
         <userInfo/>
     </entity>
+    <entity name="ProjectDetails" representedClassName="ProjectDetails" syncable="YES">
+        <attribute name="projectDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="info" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="ProjectInfo" inverseName="details" inverseEntity="ProjectInfo" syncable="YES"/>
+    </entity>
+    <entity name="ProjectInfo" representedClassName="ProjectInfo" syncable="YES">
+        <attribute name="projectId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="projectName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="details" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="ProjectDetails" inverseName="info" inverseEntity="ProjectDetails" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="NewsInfo" positionX="225" positionY="222" width="128" height="90"/>
         <element name="NewsDetails" positionX="394" positionY="108" width="128" height="90"/>
+        <element name="NewsInfo" positionX="225" positionY="222" width="128" height="90"/>
+        <element name="ProjectInfo" positionX="396" positionY="216" width="128" height="90"/>
+        <element name="ProjectDetails" positionX="558" positionY="231" width="128" height="75"/>
     </elements>
 </model>

@@ -16,13 +16,16 @@
 @synthesize managedObjectContext;
 @synthesize fetchedResultsController = _fetchedResultsController;
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (void)viewWillAppear:(BOOL)animated
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    [super viewWillAppear:animated];
+    //Add gradient background
+    CAGradientLayer *bgLayer = [BackgroundLayer blueGradient];
+	bgLayer.frame = self.view.bounds;
+    
+    UIView *tableBackgroundView = [[UIView alloc] init];
+    [tableBackgroundView.layer insertSublayer:bgLayer atIndex:0];
+    [self.tableView setBackgroundView:tableBackgroundView];
 }
 
 
@@ -116,7 +119,6 @@
     if (managedObjectContext == nil)
     {
         managedObjectContext = [(AppDelegate *)[[UIApplication sharedApplication] delegate] managedObjectContext];
-        NSLog(@"After managedObjectContext: %@",  managedObjectContext);
     }
     
     NSError *error;

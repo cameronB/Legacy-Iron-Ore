@@ -43,8 +43,7 @@
 		9E6A623616034D7100C11085 /* NewsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E6A623516034D7100C11085 /* NewsDelegate.m */; };
 		9E6A623C160359E600C11085 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E6A623B160359E600C11085 /* Default.png */; };
 		9E8698FA160571B600CE5231 /* BackgroundLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8698F9160571B600CE5231 /* BackgroundLayer.m */; };
-		9E9C2D7A1604972E00201B1F /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */; };
-		9E9C2D7B1604972E00201B1F /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */; };
+		9E8699691605D40F00CE5231 /* Legacy_Iron_Ore.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 9E8699681605D40F00CE5231 /* Legacy_Iron_Ore.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,7 +131,7 @@
 		9E8698991604C7B600CE5231 /* LegacyNews.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LegacyNews.xcodeproj; path = LegacyNews/LegacyNews.xcodeproj; sourceTree = "<group>"; };
 		9E8698F8160571B600CE5231 /* BackgroundLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BackgroundLayer.h; sourceTree = "<group>"; };
 		9E8698F9160571B600CE5231 /* BackgroundLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BackgroundLayer.m; sourceTree = "<group>"; };
-		9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
+		9E8699681605D40F00CE5231 /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +257,7 @@
 		9E6A617215F36B6700C11085 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				9E8699681605D40F00CE5231 /* Legacy_Iron_Ore.sqlite */,
 				9E6A617315F36B7000C11085 /* NewsEntity */,
 			);
 			name = CoreData;
@@ -266,7 +266,6 @@
 		9E6A617315F36B7000C11085 /* NewsEntity */ = {
 			isa = PBXGroup;
 			children = (
-				9E9C2D791604972E00201B1F /* Legacy_Iron_Ore.sqlite */,
 				9E6A623016034C3300C11085 /* NSXMLParser */,
 				9E6A617A15F36BCF00C11085 /* NewsInfo.h */,
 				9E6A617B15F36BCF00C11085 /* NewsInfo.m */,
@@ -448,7 +447,6 @@
 				9E6A618515F3712B00C11085 /* LCYStartUpScreen.png in Resources */,
 				9E6A618715F3716C00C11085 /* ButtonMenu.png in Resources */,
 				9E6A623C160359E600C11085 /* Default.png in Resources */,
-				9E9C2D7A1604972E00201B1F /* Legacy_Iron_Ore.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,7 +455,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E6A615515F364EA00C11085 /* InfoPlist.strings in Resources */,
-				9E9C2D7B1604972E00201B1F /* Legacy_Iron_Ore.sqlite in Resources */,
+				9E8699691605D40F00CE5231 /* Legacy_Iron_Ore.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

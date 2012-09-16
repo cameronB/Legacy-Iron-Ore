@@ -16,6 +16,10 @@
 		9E8698AC1604C81A00CE5231 /* NewsInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8698AA1604C81A00CE5231 /* NewsInfo.m */; };
 		9E8698AE1604C84F00CE5231 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8698AD1604C84F00CE5231 /* main.m */; };
 		9E8698B11604C8AA00CE5231 /* Legacy_Iron_Ore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9E8698AF1604C8AA00CE5231 /* Legacy_Iron_Ore.xcdatamodeld */; };
+		9E8699331605ACCA00CE5231 /* ProjectDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8699321605ACCA00CE5231 /* ProjectDetails.m */; };
+		9E8699361605ACD900CE5231 /* ProjectInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8699351605ACD900CE5231 /* ProjectInfo.m */; };
+		9E86993E1605AEC100CE5231 /* ProjectsDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E86993D1605AEC100CE5231 /* ProjectsDelegate.m */; };
+		9E8699411605AED600CE5231 /* ProjectsStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E8699401605AED600CE5231 /* ProjectsStore.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -47,7 +51,15 @@
 		9E8698AA1604C81A00CE5231 /* NewsInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsInfo.m; sourceTree = "<group>"; };
 		9E8698AD1604C84F00CE5231 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E8698B01604C8AA00CE5231 /* Legacy_Iron_Ore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Legacy_Iron_Ore.xcdatamodel; sourceTree = "<group>"; };
-		9E8698B31604C9C500CE5231 /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
+		9E8699311605ACCA00CE5231 /* ProjectDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectDetails.h; sourceTree = "<group>"; };
+		9E8699321605ACCA00CE5231 /* ProjectDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectDetails.m; sourceTree = "<group>"; };
+		9E8699341605ACD900CE5231 /* ProjectInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectInfo.h; sourceTree = "<group>"; };
+		9E8699351605ACD900CE5231 /* ProjectInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectInfo.m; sourceTree = "<group>"; };
+		9E86993C1605AEC100CE5231 /* ProjectsDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsDelegate.h; sourceTree = "<group>"; };
+		9E86993D1605AEC100CE5231 /* ProjectsDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsDelegate.m; sourceTree = "<group>"; };
+		9E86993F1605AED600CE5231 /* ProjectsStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectsStore.h; sourceTree = "<group>"; };
+		9E8699401605AED600CE5231 /* ProjectsStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectsStore.m; sourceTree = "<group>"; };
+		9E8699671605D33100CE5231 /* Legacy_Iron_Ore.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = Legacy_Iron_Ore.sqlite; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,12 +104,8 @@
 		9E86988A1604C7B600CE5231 /* LegacyNews */ = {
 			isa = PBXGroup;
 			children = (
-				9E8698B31604C9C500CE5231 /* Legacy_Iron_Ore.sqlite */,
+				9E8699671605D33100CE5231 /* Legacy_Iron_Ore.sqlite */,
 				9E8698A01604C7E500CE5231 /* NSXMLParser */,
-				9E8698A71604C81A00CE5231 /* NewsDetails.h */,
-				9E8698A81604C81A00CE5231 /* NewsDetails.m */,
-				9E8698A91604C81A00CE5231 /* NewsInfo.h */,
-				9E8698AA1604C81A00CE5231 /* NewsInfo.m */,
 				9E8698AD1604C84F00CE5231 /* main.m */,
 				9E8698AF1604C8AA00CE5231 /* Legacy_Iron_Ore.xcdatamodeld */,
 				9E8698921604C7B600CE5231 /* LegacyNews.1 */,
@@ -117,12 +125,64 @@
 		9E8698A01604C7E500CE5231 /* NSXMLParser */ = {
 			isa = PBXGroup;
 			children = (
+				9E86993B1605ADF600CE5231 /* Projects */,
+				9E8699391605AD6100CE5231 /* News */,
+				9E8699371605ACEB00CE5231 /* CoreData */,
+			);
+			name = NSXMLParser;
+			sourceTree = "<group>";
+		};
+		9E86992D1605AC8900CE5231 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				9E8699311605ACCA00CE5231 /* ProjectDetails.h */,
+				9E8699321605ACCA00CE5231 /* ProjectDetails.m */,
+				9E8699341605ACD900CE5231 /* ProjectInfo.h */,
+				9E8699351605ACD900CE5231 /* ProjectInfo.m */,
+			);
+			name = Projects;
+			sourceTree = "<group>";
+		};
+		9E8699371605ACEB00CE5231 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				9E86993A1605ADEA00CE5231 /* News */,
+				9E86992D1605AC8900CE5231 /* Projects */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		9E8699391605AD6100CE5231 /* News */ = {
+			isa = PBXGroup;
+			children = (
 				9E8698A11604C80B00CE5231 /* NewsDelegate.h */,
 				9E8698A21604C80B00CE5231 /* NewsDelegate.m */,
 				9E8698A31604C80B00CE5231 /* NewsStore.h */,
 				9E8698A41604C80B00CE5231 /* NewsStore.m */,
 			);
-			name = NSXMLParser;
+			name = News;
+			sourceTree = "<group>";
+		};
+		9E86993A1605ADEA00CE5231 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				9E8698A71604C81A00CE5231 /* NewsDetails.h */,
+				9E8698A81604C81A00CE5231 /* NewsDetails.m */,
+				9E8698A91604C81A00CE5231 /* NewsInfo.h */,
+				9E8698AA1604C81A00CE5231 /* NewsInfo.m */,
+			);
+			name = News;
+			sourceTree = "<group>";
+		};
+		9E86993B1605ADF600CE5231 /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				9E86993C1605AEC100CE5231 /* ProjectsDelegate.h */,
+				9E86993D1605AEC100CE5231 /* ProjectsDelegate.m */,
+				9E86993F1605AED600CE5231 /* ProjectsStore.h */,
+				9E8699401605AED600CE5231 /* ProjectsStore.m */,
+			);
+			name = Projects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +242,10 @@
 				9E8698AC1604C81A00CE5231 /* NewsInfo.m in Sources */,
 				9E8698AE1604C84F00CE5231 /* main.m in Sources */,
 				9E8698B11604C8AA00CE5231 /* Legacy_Iron_Ore.xcdatamodeld in Sources */,
+				9E8699331605ACCA00CE5231 /* ProjectDetails.m in Sources */,
+				9E8699361605ACD900CE5231 /* ProjectInfo.m in Sources */,
+				9E86993E1605AEC100CE5231 /* ProjectsDelegate.m in Sources */,
+				9E8699411605AED600CE5231 /* ProjectsStore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +338,7 @@
 				9E8698981604C7B600CE5231 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
